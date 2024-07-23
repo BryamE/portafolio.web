@@ -1,9 +1,6 @@
-# Portafolio Basico de Bryam
+# Portafolio Basico
 
-```text
-npm create astro@latest -- --template basics
-```
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+>  **Mi Portafolio.** Realizado con Astro, Tailwind CSS y HTML
 
 ![image](https://github.com/user-attachments/assets/2043b21b-93e3-4ebf-8a42-66fac4f0e4a6)
 
