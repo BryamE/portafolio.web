@@ -1,0 +1,63 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Badge from '../components/Badge.astro';
+import GitHub from '../icons/GitHub.astro';
+import LinkedIn from '../icons/LinkedIn.astro';
+import Socials from '../components/Socials.astro';
+import Mail from '../icons/Mail.astro';
+import Timeline from '../components/Timeline.astro';
+import Clock from '../icons/Clock.astro';
+import Code from '../icons/Code.astro';
+import Projects from '../components/Projects.astro';
+---
+
+<Layout title="Portfolio de Bryam C - FullStack Developer">
+	<main class="px-4">
+		<section id="sobre-mi" class="w-full mx-auto py-44 pb-32 lg:w-[740px]">
+			<h1 class="text-white text-3xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-4">Hola! Soy Bryam 
+				<a href="https://linkedin.com/in/bryam-cesar" target="_blank" rel="noopener" class="flex items-center transition md:justify-center md:hover:scale-105">
+					<Badge> Contratable </Badge></a></h1>
+			<h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
+				<span class="text-yellow-200/90">Futuro Licenciado en Sistemas</span>
+				, actualmente estudiante de la FCyT UAdER. 
+				<span class="text-blue-100/90">De Entre Ríos, Argentina.</span> 
+				<span class="opacity-80">No tengo una orientacion especifica</span>
+				, pero con animos de programar cualquier desafio.</h2>
+			<nav class="flex gap-x-4 mt-5">
+				<Socials href="http://linkedin.com/in/bryam-cesar/">
+					<LinkedIn class="w-6 h-6" />
+					LinkedIn
+				</Socials>
+
+				<Socials href="http://github.com/BryamE">
+					<GitHub class="w-6 h-6"/>
+					GitHub
+				</Socials>
+				<Socials href="mailto:bryam.cesar18@gmail.com">
+					<Mail class="w-6 h-6"/>
+					bryam.cesar18@gmail.com
+				</Socials>
+			</nav>
+
+		</section>
+
+		<section id="trayectoria" class="w-full mx-auto pb-24 lg:w-[740px]">
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+				<Clock class="size-7" />
+				Mi Trayectoria
+			</h2>
+			<Timeline />
+		</section>
+
+		<section id="proyectos" class="w-full mx-auto pb-24 lg:w-[740px]">
+
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+				<Code class="size-7" />
+				Proyectos
+			</h2>
+			<Projects />
+		</section>
+
+	</main>
+</Layout>
+

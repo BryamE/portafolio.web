@@ -1,0 +1,31 @@
+---
+import TimeItem from "./TimeItem.astro"
+
+const TIMEITEMS = [
+    {
+        date:'Actualmente...',
+        title:'Estudiando Lic. En Sistemas',
+        desc:'Estoy en la facultad de UADER FCyT, sede Oro Verde, en mi tercer año de la carrera licenciatura en sistemas de la informacion.',
+        link:'https://fcyt.uader.edu.ar',
+    },{
+        date:'Enero 2023',
+        title:'Inicio Curso Argentina Programa 4.0',
+        desc:'Realize un curso de programacion web html y css basico',
+    },{
+        date:'Septiembre 2021',
+        title:'Inicio Curso FullStack Web',
+        desc:'Realize un curso de programacion web html y css nivel intermedio, con SQL y frameworks webs como springboot',
+    }
+]
+---
+
+<ol class="relative border-s ml-3">
+    { 
+        TIMEITEMS.map(item => (
+        <li class="mb-10 ms-4">
+            <TimeItem { ... item} />
+        </li>
+        ))
+    }
+</ol>
+

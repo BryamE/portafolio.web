@@ -1,0 +1,52 @@
+---
+
+const PROYECTOS = [
+  {
+    title: "Linux Journey | Aprender Bash desde 0",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Proin vel nibh vel ex porta finibus quis nec erat.",
+    link: "https://linuxjourney.com",
+    github: "#",
+    image: "/127shots_so.webp",
+    tags: ["HTML", "CSS", "TailWind"],
+  },
+//   {
+//     title: "Proyecto 2",
+//     desc: "Phasellus cursus, libero ut interdum malesuada, ante nunc aliquet justo, a luctus ante purus sit amet nibh. Aenean at elit viverra, efficitur justo at, hendrerit enim.",
+//     link: "#",
+//     github: "#",
+//     image: "",
+//     tags: ["HTML", "CSS", "Astro"],
+//   },
+//   {
+//     title: "Proyecto 3",
+//     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel nibh vel ex porta finibus quis nec erat.",
+//     link: "#",
+//     github: "#",
+//     image: "",
+//     tags: ["Python", "C#", "Unity"],
+//   },
+];
+---
+
+{PROYECTOS.map(({title, desc, tags, link, github, image}) => (
+    <article>
+        <h3 class="text-2xl font-semibold text-yellow-100 mb-2">{title}</h3>
+        <p class="text-lg mb-4 text-pretty">{desc}</p>
+        <ul class="flex gap-x-2 flex-row mb-2">
+            {tags.map(tag =>( 
+                <li class="">
+                    <span class="flex gap-x-2 rounded-full text-xs border border-white/10 py-1 px-2 ">
+                    {tag}
+                    </span>
+                </li>
+            ))}
+        </ul>
+        <img class="rounded-lg shadow-2xl shadow-white/10" src={image} alt={title} />
+
+    </article>
+
+
+
+)
+)
+}
