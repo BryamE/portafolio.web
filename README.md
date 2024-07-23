@@ -1,6 +1,6 @@
 # Portafolio Basico de Bryam
 
-```sh
+```text
 npm create astro@latest -- --template basics
 ```
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
